@@ -7,76 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- main nav start -->
-   <!-- nav#main-nav>ul>li.list-item*5>a -->
-   <nav id="main-nav">
-       <ul>
-           <li class="list-item">
-               <a href="https://google.com" target="_blank">Google</a>
-            </li>
-           <li class="list-item">
-               <a href="#main">Main</a>
-            </li>
-            <li class="list-item">
-                    <a href="mailto:ntlmbns@gmail.com">Napisz maila</a>
-                 </li> 
-            <li class="list-item">
-               <a href=""></a>
-            </li>
-           <li class="list-item">
-               <a href="tel:+48111222333">Zadzwon</a>
-            </li>
-       </ul>
-   </nav>
-    <!-- main nev end -->
-    </section>
-    <section id="main">Main</section>
-    <!-- tabele -->
-    <table>
-        <!-- glowa tabeli -->
-        <thead>
-        <tr>        
-            <th>Produkt</th>
-            <th>Ilosc</th>
-            <th>Cena</th>
-        </tr>
-        </thead>
-        <!-- cialo tabeli -->
-        <tbody>
-                <tr>
-                <td>Jablka</td>
-                <td>100</td>
-                <td>100</td>
-                </tr>
-                <tr>
-                <td>Jablka</td>
-                <td>100</td>
-                <td>100</td>
-                </tr> <tr>
-                <td>Jablka</td>
-                <td>100</td>
-                <td>100</td>
-                </tr>
-        </tbody>
-        <!-- stopka tabeli -->
-        <tofoot>
-            <tr>
-                <td>Razem</td>
-                <td>300</td>
-                <td>300</td>
-            </tr>
-        </tofoot>
-    </table>
     <!-- form -->
-    <form action="" method="">
-        <label for="name">Name</label><input type="text" id="name" placeholder="Enter name here">
-        <input typ="number" placeholder="Enter phone number here">
-        <input type="checkbox">Newsletter</input>
-        <input type="radio" name="gender">Woman</input>
-        <input type="radio" name="gender">Man</input>
-        <input type="email" placeholder="Email" required></input>
-        <textarea name="" id="" maxlength="2"></textarea>
-        <input type="submit" value="Send">
+    <h2>Contact us</h2>
+    <form action="https://formspree.io/xwkplyay" method="POST">
+        <p>
+            <label for="name">First name</label>
+            <input type="text" id="name" name="name" required>
+        </p>
+        <p>
+            <label for="lastname">Last name</label>
+            <input type="text" id="lastname" name="lastname" required>
+        </p>
+        <p>  
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="tel">Phone number</label>
+            <input type="number" id="tel" name="tel">
+        </p> 
+        <p>   
+            <label for="message">What do you want to tell us?</label>
+            <textarea name="message" id="message" maxlength="350"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Send">
+        </p>
     </form>
 </body>
 </html>
